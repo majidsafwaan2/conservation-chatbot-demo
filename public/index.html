@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife Conservation NGO</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f8f3; margin: 0; padding: 0; }
+    .container { max-width: 700px; margin: 60px auto 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 40px; }
+    h1 { color: #2d5016; }
+    p { color: #333; font-size: 1.2em; }
+    .animal-images {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .animal-images img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: #eee;
+    }
+    .chatbot-container { margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Wildlife Guardians</h1>
+    <p>We are dedicated to protecting endangered species and their habitats. Chat with our AI-powered animal ambassadors to learn more about conservation and how you can help!</p>
+    <div class="animal-images" id="animal-images"></div>
+    <div class="chatbot-container" id="chatbot-root"></div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html> 
